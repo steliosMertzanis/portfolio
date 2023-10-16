@@ -1,0 +1,5 @@
+/*-----Mobile-----*/
+.cv {
+  @include flex(column, center, center);
+  text-align: center;
+}

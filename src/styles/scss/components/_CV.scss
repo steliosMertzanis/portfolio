@@ -1,0 +1,89 @@
+/*-----Mobile-----*/
+.cv {
+  width: 95%;
+  font-size: 1.3rem;
+  margin-bottom: 1.2em;
+  border-radius: 10px;
+  padding: 1.05em;
+  background-color: #c1a7a2;
+
+  div {
+    background: $secondBgColor;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  .check-cv {
+    width: 11em;
+  }
+  .check-repo {
+    width: 19em;
+  }
+  button {
+    font-family: $fontHeading;
+    font-size: 1.2rem;
+    border: none;
+    text-align: center;
+    padding: 1.05em;
+    color: $yellow;
+    background: $secondBgColor;
+    border-radius: 10px;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: $yellow;
+    }
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 481px) {
+  .cv {
+    font-size: 1.4rem;
+
+    .check-cv {
+      width: 12em;
+    }
+    .check-repo {
+      width: 20em;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .cv {
+    font-size: 1.6rem;
+
+    .check-cv {
+      width: 13em;
+    }
+    .check-repo {
+      width: 21em;
+    }
+    button {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1025px) {
+  .cv {
+    font-size: 1.7rem;
+
+    .check-cv {
+      width: 14em;
+    }
+    .check-repo {
+      width: 22em;
+    }
+    button {
+      font-size: 1.5rem;
+    }
+  }
+}

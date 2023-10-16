@@ -1,0 +1,11 @@
+/*-----Mobile-----*/
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+
+  .buttons {
+    @include flex(row, space-around, center);
+    text-align: center;
+  }
+}

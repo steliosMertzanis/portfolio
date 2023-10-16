@@ -1,0 +1,47 @@
+/*-----Mobile-----*/
+.footer-container {
+  @include flex(column, center, center);
+  text-align: center;
+
+  .footer-logo {
+    @include flex(row, center, center);
+    text-align: center;
+  }
+
+  .social-icons {
+    .social-icons-menu {
+      @include flex(row, space-evenly, center);
+    }
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .footer-container {
+    display: grid;
+
+    grid-template-columns: 30% 40% 30%;
+    grid-template-areas:
+      "first second third"
+      "design1 design design2";
+    justify-items: center;
+    justify-content: center;
+    align-items: start;
+    align-content: center;
+  }
+
+  .footer-logo {
+    grid-area: first;
+  }
+  .website-rights {
+    grid-area: third;
+  }
+  .social-icons {
+    grid-area: second;
+    @include flex(column);
+  }
+  .design {
+    grid-area: design;
+    @include flex(column, center, center);
+  }
+}

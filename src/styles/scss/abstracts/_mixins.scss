@@ -1,0 +1,48 @@
+@mixin flex($direction: row, $mainAxis: center, $crossAxis: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $mainAxis;
+  align-items: $crossAxis;
+}
+
+@mixin underline($color) {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: $color;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+@mixin scale($color, $number) {
+  &:hover {
+    color: $color;
+    transform: scale($number);
+    transition: all 0.3s ease;
+  }
+}
+
+@mixin backgound($color, $bgColor) {
+  &:hover {
+    color: $color;
+    background: $bgColor;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.3s ease;
+  }
+}
+
+@mixin borderFooter($color: $yellow) {
+  border-bottom: $color 1px solid;
+  border-radius: 30%;
+}

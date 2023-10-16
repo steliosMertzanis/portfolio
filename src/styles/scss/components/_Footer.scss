@@ -1,0 +1,106 @@
+/*-----Mobile-----*/
+.footer-container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: $navBarFooterColor;
+  font-family: $fontHeading;
+  font-size: 1.5rem;
+  color: $white;
+
+  & > * {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .footer-logo {
+    width: 100%;
+    color: $white;
+    @include borderFooter;
+  }
+  .website-rights {
+    width: 100%;
+    @include borderFooter;
+  }
+  .social-icons {
+    width: 100%;
+    text-align: center;
+    @include borderFooter;
+    p {
+      margin-bottom: 0.7em;
+    }
+
+    .social-icons-menu {
+      width: 100%;
+      padding: 0 1em;
+
+      .icon {
+        width: 2.3em;
+        height: 2.3em;
+        padding: 10px;
+        border: 2px $yellow solid;
+        border-radius: 25px;
+        filter: brightness(70%) sepia(1) hue-rotate(30deg);
+
+        .svg {
+          width: 100%;
+          height: 100%;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .design {
+    width: 100%;
+    color: $yellow;
+    margin-bottom: 0;
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 481px) {
+  .footer-container {
+    font-size: 1.3rem;
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .footer-container {
+    padding: 0;
+    padding-top: 1em;
+    & > * {
+      padding: 1em;
+      margin: 0 1em;
+    }
+
+    .design {
+      width: 100%;
+      p {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        grid-area: design1;
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        grid-area: design2;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1025px) {
+  .footer-container {
+    font-size: 1.5rem;
+  }
+}

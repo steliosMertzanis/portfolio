@@ -1,0 +1,64 @@
+/*-----Mobile-----*/
+.about {
+  width: 100%;
+  font-family: $fontText;
+  color: $navBarFooterColor;
+  background: $secondBgColor;
+
+  .intro {
+    width: 100%;
+    margin-bottom: 1.7em;
+
+    #name {
+      font-family: $fontText;
+      font-size: 1.7rem;
+      color: $navBarFooterColor;
+      margin-top: 0.5em;
+    }
+
+    p {
+      font-size: 1.4rem;
+      font-family: $fontHeading;
+      margin-top: 0.5em;
+      color: $yellow;
+    }
+  }
+
+  .background {
+    width: 95%;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1.2em;
+    color: $navBarFooterColor;
+    background-color: $white;
+    border-radius: 10px;
+
+    p {
+      margin: 0.5em auto;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .intro {
+    #name {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .intro {
+    #name {
+      font-size: 2.6rem;
+    }
+
+    p {
+      font-size: 2.1rem;
+    }
+  }
+}

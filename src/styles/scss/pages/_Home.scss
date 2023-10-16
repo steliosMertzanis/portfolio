@@ -1,0 +1,120 @@
+/*-----Mobile-----*/
+.home {
+  width: 100%;
+  font-size: 1.3rem;
+  color: $fontColor;
+
+  .welcome {
+    width: 100%;
+    height: calc(100vh - 180px);
+    background-color: $secondBgColor;
+    color: $white;
+
+    .prompt {
+      font-family: $fontHeading;
+      margin: 3.5em auto;
+      padding: 0 0.2em;
+      text-align: center;
+
+      h2 {
+        font-size: 2rem;
+        color: $yellow;
+        margin-bottom: 0.5em;
+      }
+
+      h3 {
+        color: $white;
+      }
+    }
+
+    .quote {
+      width: 100%;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: auto;
+      padding: 0 0.5em;
+      font-style: oblique;
+    }
+
+    #knuth {
+      font-family: $fontHeading;
+      font-style: normal;
+      color: $white;
+    }
+  }
+
+  .skills {
+    width: 100%;
+    height: 100%;
+    margin: 1.7em 0;
+
+    h1 {
+      margin-bottom: 0.5em;
+    }
+    h1,
+    h2 {
+      font-family: $fontHeading;
+    }
+
+    .list {
+      list-style: none;
+      margin: auto;
+      .item {
+        margin: 1.1em auto;
+      }
+    }
+
+    span {
+      font-family: $fontText;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .home {
+    font-size: 1.5rem;
+    .welcome {
+      .prompt {
+        h2 {
+          font-size: 2.2rem;
+        }
+      }
+
+      .quote {
+        font-size: 1.4rem;
+      }
+    }
+
+    .skills {
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+/*-----Desktop,Tv-----*/
+@media screen and (min-width: 1025px) {
+  .home {
+    font-size: 1.7rem;
+    .welcome {
+      .prompt {
+        h2 {
+          font-size: 2.4rem;
+        }
+      }
+
+      .quote {
+        font-size: 1.6rem;
+      }
+    }
+
+    .skills {
+      span {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}

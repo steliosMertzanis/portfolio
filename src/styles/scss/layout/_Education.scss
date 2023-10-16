@@ -1,0 +1,5 @@
+/*-----Mobile-----*/
+.education {
+  @include flex(column, center, center);
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+/*-----Mobile-----*/
+.education {
+  width: 95%;
+  font-size: 1.2rem;
+  color: $navBarFooterColor;
+  padding: 1.05em;
+  margin-bottom: 1.2em;
+  border-radius: 10px;
+  background-color: $yellow;
+
+  .education-item {
+    margin-top: 0.7em;
+    padding: 0.6em;
+    border-radius: 10px;
+    background-color: $white;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .education {
+    font-size: 1.5rem;
+  }
+}

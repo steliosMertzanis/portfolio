@@ -1,0 +1,33 @@
+@import "normalize.css";
+@import "../core/typography";
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../components/Navbar";
+@import "../layout/Navbar";
+@import "../pages/Home";
+@import "../layout/Home";
+@import "../components/Education";
+@import "../layout/Education";
+@import "../components/CV";
+@import "../layout/CV";
+@import "../pages/About";
+@import "../layout/About";
+@import "../components/Footer";
+@import "../layout/Footer";
+@import "../pages/Projects";
+@import "../layout/Projects";
+@import "../components/ProjectItem";
+@import "../layout/ProjectItem";
+@import "../pages/ProjectDisplay";
+@import "../layout/ProjectDisplay";
+
+:root {
+  font-size: 100%;
+  font-family: $fontText;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

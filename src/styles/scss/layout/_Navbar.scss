@@ -1,0 +1,81 @@
+/*-----Mobile-----*/
+@media screen and (min-width: 0) and (max-width: 480px) {
+  .navbar {
+    @include flex(row, space-between, center);
+
+    .logo-menu-section {
+      @include flex(row, space-between, center);
+
+      .logo {
+        @include flex(row, space-between, center);
+      }
+    }
+
+    .menu {
+      @include flex(column, flex-start, center);
+
+      .nav-item {
+        @include flex(column, center, center);
+
+        .nav-links {
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 481px) {
+  .navbar {
+    @include flex(column, center, center);
+    text-align: center;
+
+    .logo-menu-section {
+      @include flex(column, center, center);
+
+      .logo {
+        @include flex(column, center, center);
+      }
+    }
+    .menu {
+      @include flex(row, center, center);
+
+      .nav-item {
+        @include flex(row, center, center);
+        .nav-links {
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .navbar {
+    @include flex(row, center, center);
+    text-align: center;
+
+    .logo-menu-section {
+      @include flex(row, flex-start, center);
+
+      .logo {
+        @include flex(row, flex-start, center);
+      }
+    }
+    .menu {
+      @include flex(row, flex-end, center);
+
+      .nav-item {
+        @include flex(row, center, center);
+        .nav-links {
+          @include flex(row, center, center);
+        }
+      }
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1025px) {
+}

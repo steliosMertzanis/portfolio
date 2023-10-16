@@ -1,0 +1,199 @@
+/*-----Mobile-----*/
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: $navBarFooterColor;
+
+  .logo-menu-section {
+    width: 100%;
+    height: 100%;
+
+    .logo {
+      text-decoration: none;
+      color: $white;
+
+      .navbar-icon {
+        font-size: 2.3rem;
+        background: transparent;
+      }
+      .title {
+        position: relative;
+        font-family: $fontHeading;
+        font-size: 2rem;
+        margin-left: 0.2em;
+        @include underline($yellow);
+      }
+    }
+
+    .menu-icon {
+      font-size: 3rem;
+      height: 60px;
+      color: $white;
+      padding-top: 0.1em;
+      margin-right: 0.1em;
+    }
+  }
+
+  @media screen and (min-width: 0) and (max-width: 480px) {
+    .menu {
+      display: none;
+      width: 100%;
+      height: 100vh;
+      padding-top: 1.5em;
+      list-style: none;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      background: $navBarFooterColor;
+      opacity: 1;
+      transition: all 0.5s ease;
+
+      &.active {
+        display: block;
+        left: 0;
+        z-index: 1;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .nav-item {
+      width: 100%;
+      font-size: 1.5rem;
+      margin: 0.1em 0;
+      padding: 0.1em 0;
+
+      .nav-links {
+        width: 100%;
+        margin: 0.2em 0;
+        padding: 0.2em 0;
+        font-family: $fontHeading;
+        color: $white;
+        text-decoration: none;
+
+        @media screen and (max-width: 480px) {
+          @include scale($yellow, 1.2);
+        }
+      }
+    }
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 481px) {
+  .navbar {
+    height: 160px;
+
+    .menu-icon {
+      display: none;
+    }
+
+    .logo-menu-section {
+      height: 50%;
+
+      .logo {
+        width: 100%;
+        .navbar-icon {
+          font-size: 2.5rem;
+        }
+        .title {
+          font-size: 2.3rem;
+        }
+      }
+    }
+    .menu {
+      width: 100%;
+      height: 50%;
+      list-style: none;
+
+      .nav-item {
+        width: 100%;
+        font-size: 1.7rem;
+
+        .nav-links {
+          font-family: $fontHeading;
+          color: $white;
+          text-decoration: none;
+
+          @media screen and (max-width: 768px) {
+            width: 80%;
+            position: relative;
+            @include underline($yellow);
+          }
+        }
+      }
+    }
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .navbar {
+    height: 80px;
+
+    .logo-menu-section {
+      height: 100%;
+      margin-left: 0.3em;
+
+      .logo {
+        font-size: 2.7rem;
+
+        .navbar-icon {
+          font-size: 2.7rem;
+        }
+        .title {
+          font-size: 2.5rem;
+          @include backgound($fontColor, $yellow);
+        }
+      }
+    }
+
+    .menu {
+      height: 100%;
+      margin-right: 0.3em;
+
+      .nav-item {
+        font-size: 1.9rem;
+
+        .nav-links {
+          width: 100%;
+          position: relative;
+          @include underline($yellow);
+          @include backgound($fontColor, $yellow);
+        }
+      }
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1025px) {
+  .navbar {
+    .logo-menu-section {
+      height: 100%;
+      margin-left: 0.5em;
+
+      .logo {
+        font-size: 3rem;
+        .navbar-icon {
+          font-size: 3rem;
+        }
+        .title {
+          font-size: 2.8rem;
+        }
+      }
+    }
+
+    .menu {
+      margin-right: 0.5em;
+
+      .nav-item {
+        font-size: 2.2rem;
+
+        .nav-links {
+          @include scale($fontColor, 1.2);
+        }
+      }
+    }
+  }
+}

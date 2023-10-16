@@ -1,0 +1,71 @@
+/*-----Mobile-----*/
+.project {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  text-align: center;
+  color: $white;
+  background: $secondBgColor;
+
+  .name {
+    font-family: $fontHeading;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .descr {
+    color: $fontColor;
+    margin-bottom: 1em;
+  }
+
+  .image {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+
+  .buttons {
+    width: 90%;
+    height: 100%;
+    margin-top: 0.3em;
+    margin-bottom: 1em;
+
+    .btn {
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+
+      .icons {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 481px) {
+  .icons {
+    font-size: 2.3rem;
+  }
+}
+/*-----Laptop-----*/
+@media screen and (min-width: 769px) {
+  .project {
+    font-size: 2.3rem;
+    .icons {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1025px) {
+  .project {
+    font-size: 2.5rem;
+    .icons {
+      font-size: 2.7rem;
+    }
+  }
+}

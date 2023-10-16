@@ -1,0 +1,36 @@
+/*-----Mobile-----*/
+.projects {
+  @include flex(column, center, center);
+  .projectList {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
+
+/*-----Tablet-----*/
+@media screen and (min-width: 570px) {
+  .projects {
+    .projectList {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+/*-----Laptop-----*/
+@media screen and (min-width: 860px) {
+  .projects {
+    .projectList {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+/*-----Desktop,TV-----*/
+@media screen and (min-width: 1160px) {
+  .projects {
+    .projectList {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
