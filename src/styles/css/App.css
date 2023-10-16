@@ -738,10 +738,10 @@
   margin: 5px;
 }
 .cv .check-cv {
-  width: 11em;
+  width: 60%;
 }
 .cv .check-repo {
-  width: 19em;
+  width: 80%;
 }
 .cv button {
   font-family: "Montserrat", sans-serif;
@@ -806,6 +806,38 @@
 }
 /*-----Mobile-----*/
 .cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.cv .check-cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.cv .check-repo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -949,8 +981,8 @@
   padding: 0 1em;
 }
 .footer-container .social-icons .social-icons-menu .icon {
-  width: 2.3em;
-  height: 2.3em;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 10px;
   border: 2px #e9d35b solid;
   border-radius: 25px;

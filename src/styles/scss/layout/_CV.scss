@@ -2,4 +2,12 @@
 .cv {
   @include flex(column, center, center);
   text-align: center;
+  .check-cv {
+    @include flex(column, center, center);
+    text-align: center;
+  }
+  .check-repo {
+    @include flex(column, center, center);
+    text-align: center;
+  }
 }

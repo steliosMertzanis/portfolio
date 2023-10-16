@@ -23,6 +23,7 @@ function CV() {
           Download my CV
         </button>
       </div>
+
       <div className="check-repo">
         <button className="repo-button">
           <Link
