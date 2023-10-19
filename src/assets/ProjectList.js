@@ -29,7 +29,7 @@ export const ProjectList = [
     },
     url: "https://steliosmertzanis.github.io/form-website/",
     repositoryUrl: "https://github.com/steliosMertzanis/form-website",
-    description: "A Sign Up Form ",
+    description: "A Sign Up Form. ",
   },
   {
     name: "Meals App",
@@ -40,6 +40,6 @@ export const ProjectList = [
     },
     url: "https://github.com/steliosMertzanis/MealsApp-Java",
     repositoryUrl: "https://github.com/steliosMertzanis/MealsApp-Java",
-    description: "A Meals App - Java - Derby database - API",
+    description: "A Meals App - Java - Derby database - API.",
   },
 ];
