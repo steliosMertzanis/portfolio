@@ -27,7 +27,7 @@
     width: 100%;
     @include borderFooter;
   }
-  .social-icons {
+  .contact-icons {
     width: 100%;
     text-align: center;
     @include borderFooter;
@@ -35,13 +35,21 @@
       margin-bottom: 0.7em;
     }
 
-    .social-icons-menu {
+    .contact-icons-menu {
       width: 100%;
       padding: 0 1em;
+      @include flex(column, center, center);
+
+      .email {
+        @include flex(row, center, center);
+      }
+      .tel {
+        @include flex(row, center, center);
+      }
 
       .icon {
-        width: 3.5rem;
-        height: 3.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
         padding: 10px;
         border: 2px $yellow solid;
         border-radius: 25px;

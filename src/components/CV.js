@@ -5,12 +5,12 @@ import { FaGithub } from "react-icons/fa";
 function CV() {
   //function for download cv when clicking the button
   const onButtonClick = () => {
-    fetch("cv.pdf").then((response) => {
+    fetch("Mertzanis_cv.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "cv.pdf";
+        alink.download = "Mertzanis_cv.pdf";
         alink.click();
       });
     });

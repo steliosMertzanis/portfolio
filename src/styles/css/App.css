@@ -967,29 +967,72 @@
   border-bottom: #e9d35b 1px solid;
   border-radius: 30%;
 }
-.footer-container .social-icons {
+.footer-container .contact-icons {
   width: 100%;
   text-align: center;
   border-bottom: #e9d35b 1px solid;
   border-radius: 30%;
 }
-.footer-container .social-icons p {
+.footer-container .contact-icons p {
   margin-bottom: 0.7em;
 }
-.footer-container .social-icons .social-icons-menu {
+.footer-container .contact-icons .contact-icons-menu {
   width: 100%;
   padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.footer-container .social-icons .social-icons-menu .icon {
-  width: 3.5rem;
-  height: 3.5rem;
+.footer-container .contact-icons .contact-icons-menu .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-container .contact-icons .contact-icons-menu .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-container .contact-icons .contact-icons-menu .icon {
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 10px;
   border: 2px #e9d35b solid;
   border-radius: 25px;
   -webkit-filter: brightness(70%) sepia(1) hue-rotate(30deg);
           filter: brightness(70%) sepia(1) hue-rotate(30deg);
 }
-.footer-container .social-icons .social-icons-menu .icon .svg {
+.footer-container .contact-icons .contact-icons-menu .icon .svg {
   width: 100%;
   height: 100%;
   opacity: 0.8;

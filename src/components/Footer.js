@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLaptopCode } from "react-icons/fa6";
 
 function Footer() {
@@ -19,44 +14,15 @@ function Footer() {
       <div className="website-rights">
         <p>&copy; Mertzanis Stelios</p>
       </div>
-      <div className="social-icons">
-        <p>Social Media</p>
-        <div className="social-icons-menu">
-          <Link
-            className="social-icon-link link"
-            to="/"
-            target="_blank"
-            aria-label="Facebook">
-            <FaFacebook className="icon" />
-          </Link>
-          <Link
-            className="social-icon-link link"
-            to="/"
-            target="_blank"
-            aria-label="Instagram">
-            <FaInstagram className="icon" />
-          </Link>
-          <Link
-            className="social-icon-link link"
-            to="/"
-            target="_blank"
-            aria-label="Youtube">
-            <FaYoutube className="icon" />
-          </Link>
-          <Link
-            className="social-icon-link link"
-            to="/"
-            target="_blank"
-            aria-label="Twitter">
-            <FaTwitter className="icon" />
-          </Link>
-          <Link
-            className="social-icon-link link"
-            to="/"
-            target="_blank"
-            aria-label="LinkedIn">
-            <FaLinkedin className="icon" />
-          </Link>
+      <div className="contact-icons">
+        <p>Contact</p>
+        <div className="contact-icons-menu">
+          <div className="email">
+            <MdEmail className="icon" /> mertzanisst@gmail.com
+          </div>
+          <div className="tel">
+            <BsFillTelephoneFill className="icon" /> 6984027679
+          </div>
         </div>
       </div>
       <div className="design">
